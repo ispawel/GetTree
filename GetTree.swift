@@ -7,12 +7,6 @@
 
 import Foundation
 
-
-// [ ] - Folder
-//  *  -  File
-// ... - Count level
-
-
 //  [ ] Catalog
 //  ... [ ] Films
 //  ... ... [ ] Fantasy
@@ -97,7 +91,7 @@ let mainCategory = Category(name: "Catalog", childs: [filmCategory, musicCategor
 
 // MARK: - Functions
 
-// 1
+// 1 Get all items and folders
 func getAll(category: Category) -> [String] {
     
     var result: [String] = []
@@ -130,7 +124,7 @@ func getAll(category: Category) -> [String] {
     
 }
 
-// 2
+// 2 get folders only whith items
 func getChildsWithItems(category: Category) -> [String] {
     
     var result: [String] = []
